@@ -8,4 +8,6 @@ Express microframework to deal with routes and views:
     - Views: The views haha (not gonna be used by the API).
 
 5. Create the main config file of the application: server.js
-6. 
+6. Install Nodemon to run live updates on the files: npm install -D nodemon 
+    add the script ("dev" : "nodemon server.js" ) to the package.json file
+7. To run the script use: npm run dev
