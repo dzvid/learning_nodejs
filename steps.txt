@@ -1,0 +1,11 @@
+1. Create the api folder: node-api
+2. Inside the node-api, run the command: npm -init -y
+3. The command in step 2 creates the package.json, which stores the dependencies of the application
+4. Install Express: npm install express
+
+Express microframework to deal with routes and views: 
+    - Routes: URL address that the user can access;
+    - Views: The views haha (not gonna be used by the API).
+
+5. Create the main config file of the application: server.js
+6. 
