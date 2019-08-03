@@ -6,11 +6,15 @@ const Product = mongoose.model('Product');
 module.exports = {
     //index return a list of all the indexes of the products on the database
     async index(req, res){
-        const products = await Product.find();
+        //body is to get content from request body
+        //params is to get id parameters defined on the route
+        //query is for access the GET parameters
+        const { page = 1 } = req.query;
+        const products = await Product.paginate( { }, { page, limit: 10 });
 
         return res.json(products);
     },
-
+    
     //Create a new register (new product, Create - CRUD)
     async store(req, res){
         const product = await Product.create(req.body);
