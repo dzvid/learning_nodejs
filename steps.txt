@@ -37,3 +37,7 @@ to start the execution of a container after restart of your computer:
 17. Install the module mongoose paginate, it is a cursor based custom pagination 
 library for Mongoose with customizable labels:
     npm install mongoose-paginate
+
+18. Install CORS library to allow external access to the aplication:
+    npm install cors
+
