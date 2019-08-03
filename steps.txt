@@ -26,3 +26,7 @@ to start the execution of a container after restart of your computer:
     docker start 'your_container_name'
 11. To test if it is working, you can access: http://localhost:27017/
 12. You can also install robo3t to check and manage mongodb
+
+13. Now connect to database. Install new dependencie (mongoose is ORM for non relation databases):
+    npm install mongoose
+14. 
