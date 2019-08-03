@@ -11,3 +11,18 @@ Express microframework to deal with routes and views:
 6. Install Nodemon to run live updates on the files: npm install -D nodemon 
     add the script ("dev" : "nodemon server.js" ) to the package.json file
 7. To run the script use: npm run dev
+
+8. Install docker
+9. Install mongodb container: docker pull mongo
+10. After install the mongodb container, it is necessary
+to create and execute the container (since  mongodb uses the port 27017,
+we have to do the port fowarding of our requests to the 27017 port 
+to the 27017 port of the container)
+with the command: 
+    docker run --name mongodb -p 27017:27017 -d mongo
+to check suspended containers:
+    docker ps -a
+to start the execution of a container after restart of your computer:
+    docker start 'your_container_name'
+11. To test if it is working, you can access: http://localhost:27017/
+12. You can also install robo3t to check and manage mongodb
