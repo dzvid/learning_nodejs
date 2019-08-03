@@ -11,12 +11,31 @@ module.exports = {
         return res.json(products);
     },
 
+    //Create a new register (new product, Create - CRUD)
     async store(req, res){
-        //Code to create a new register (new product)
         const product = await Product.create(req.body);
 
         //returns the product that was created and inserted in the database
         return res.json(product);
-    }
+    },
+    //Show a product details (Read - CRUD)
+    async show(req, res){
+        const product = await Product.findById(req.params.id);
 
+        return res.json(product);
+    },
+    //Update a product info (U - CRUD)
+    async update(req, res){
+        const product = await Product.findByIdAndUpdate(req.params.id, req.body, { new: true });
+        
+        return res.json(product);
+    },
+    //Deletes a product (D - CRUD)
+    async destroy(req, res){
+
+        await Product.findByIdAndRemove(req.params.id);
+
+        //Return a success message (with no cotent)
+        return res.send();
+    }
 };
