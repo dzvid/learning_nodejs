@@ -32,3 +32,5 @@ to start the execution of a container after restart of your computer:
 14. Create our first model
 15. Install a library to require files in a directory automatically (in this case for the models): 
     npm install require-dir 
+
+16. Install Insomnia to debug the api

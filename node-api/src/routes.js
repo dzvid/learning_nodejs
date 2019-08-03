@@ -9,5 +9,6 @@ const ProductController = require('./controllers/ProductController')
 // (include parameteres, headers, ip, user authorization, etc)
 //res: It represents the response to a host
 routes.get('/products', ProductController.index);
+routes.post('/products', ProductController.store);
 
 module.exports = routes;

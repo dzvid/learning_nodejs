@@ -11,4 +11,12 @@ module.exports = {
         return res.json(products);
     },
 
+    async store(req, res){
+        //Code to create a new register (new product)
+        const product = await Product.create(req.body);
+
+        //returns the product that was created and inserted in the database
+        return res.json(product);
+    }
+
 };
