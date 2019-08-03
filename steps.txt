@@ -29,4 +29,6 @@ to start the execution of a container after restart of your computer:
 
 13. Now connect to database. Install new dependencie (mongoose is ORM for non relation databases):
     npm install mongoose
-14. 
+14. Create our first model
+15. Install a library to require files in a directory automatically (in this case for the models): 
+    npm install require-dir 
